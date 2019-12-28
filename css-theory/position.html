@@ -1,0 +1,68 @@
+<!-- 높이100%,마진0,패딩0 으로 설정하는 이유는 브라우저가 갖고있는 디폴트 값을 상쇄시키기 위함이다. -->
+<!-- 포지션이 static이라는 것은 element를 거기 놓으면 거기 있을 것이다 라는 뜻이다 ,다시 말해서, 절대 좌표에 일정하다 -->
+<!-- fixed는 스크롤에 따라서도 상대적인 좌표를 유지하는 것 -->
+<!-- absolute는 fixed랑 비슷하다, 어디에든 붙일 수 있지만,스크롤한다고 보이지는 않는다 -->
+<!-- absolute가 설정되면 html상에서 해당 element와 관계가 있는 (부모박스)element를 살펴보고 이에 상응해서 포지션이 결정되는 것이다 -->
+<!-- 부모박스가 무슨 position인지에 따라 다르게 동작한다 -->
+<!-- 다시말해서 absolute는 포지션 relativ에 상대적으로 포지션을 잡는다, 없을 경우 문서는 본문 body에 맞춰서 포지션을 잡는다 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: red;
+        height: 400%;
+      }
+      /* #boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        top: 10px;
+      } */
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- fixed를 보여주기 위한 예시 -->
+    <!-- <div id="boxOne">
+      <box-child> </box-child>
+    </div>
+    <div id="boxTwo">
+      <box-child> </box-child>
+    </div> -->
+
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+  </body>
+</html>

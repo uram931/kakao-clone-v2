@@ -1,0 +1,35 @@
+<!-- 블록,인라인-블록,인라인 -->
+<!-- 블록이란 그 바로 옆에 아무것도 없을 때,블록이라고 한다 -->
+<!-- 즉 다른 것이 옆에 있는 것을 허용하지 않는다,즉 밑에 존재하게 된다-->
+
+<!-- 인라인블록이란 -->
+<!-- 박스는 인라인-블록이나 블록 중 하나가 되어야 한다 -->
+<!-- 인라인은 박스들이 서로서로 바로 옆에 붙어 있을수 있을 때를 의미한다 -->
+
+<!-- 인라인이란 -->
+<!-- 인라인은 박스의 박스의 property 설정값을 지워야된다 -->
+<!-- 내가 작성한 컨텐츠(div,span 등)의 폭,높이 만큼의 스타일만 적용되기 때문에=박스의 폭,높이는 적용되지 않기 때문이다 -->
+<!-- 인라인 디스플레이는 박스가 아니다, 텍스트로 적용이 되는 것이다 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+    <style>
+      .box {
+        background-color: red;
+        /* width: 200px;
+        height: 200px; */
+        border: 2px solid black;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+  </body>
+</html>
