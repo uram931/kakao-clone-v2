@@ -1,0 +1,52 @@
+<!-- 웹사이트 끝에 마진이 유저사용환경에 따라 다르기 때문에 일일이 값을 맞춰줘야 되는 번거로움을 해결해주는 것이 flex -->
+<!-- 플렉스를 사용할때는 칠드런 박스에 적용하지 않는다. 오직 부모 클래스에만 적용하면 된다 -->
+<!-- 폭을 유지하고 밑으로 박스들을 떨어뜨리고 싶을때 flex-wrap:wrap -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .father {
+        display: flex;
+        /* 가운데정렬 */
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <!-- div.box{$}*10 -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>
