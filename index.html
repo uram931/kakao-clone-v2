@@ -8,6 +8,11 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -20,9 +25,13 @@
       </div>
       <div class="status-bar__columm">
         <i class="fas fa-clock"></i>
+
         <i class="fas fa-volume-mute"></i>
+
         <i class="fas fa-wifi"></i>
+
         <span class="status-bar__battery-level">100%</span>
+
         <i class="fas fa-battery-full"></i>
       </div>
       <!-- 자식 -->
@@ -34,10 +43,14 @@
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
-          <i class="far fa-comment"></i>
-          <i class="fas fa-cog fa-2x"></i>
         </span>
-        <span class="header__icon"></span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+        <!-- fa-2x 사이즈 두배 만들어줌 -->
       </div>
     </header>
     <main class="chats">
@@ -70,6 +83,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>

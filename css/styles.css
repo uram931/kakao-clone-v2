@@ -1,0 +1,22 @@
+/* 설정값을 default해서 어떠한 환경에서든 상관없이 같은 서비스를 제공 받을 수 있게 하기 위해 사용함 */
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+
+/* 일부가 짤려서 안나오는 경우 해결방법 */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  /* 부모 요소로부터 색깔을 받아온다 */
+}
