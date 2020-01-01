@@ -1,0 +1,49 @@
+.chats-body {
+  padding: 0;
+}
+.chats-body .header,
+.chats-body .status-bar {
+  padding: 0px 20px;
+}
+.chat {
+  background-image: url("../images/chevron.png");
+  /* chat 클래스가 적용된 div에 viewport의 100% 높이를 준다 */
+  min-height: 100vh;
+}
+.chat__write {
+  position: fixed;
+  bottom: 35px;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: #fcfcfc;
+  padding: 0px 20px;
+  border-radius: 40px;
+
+  /* 첫값 수평방향값 두번째 수직 값 마지막 blur값 */
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.chat__write i {
+  font-size: 22px;
+}
+
+.chat__write-column:nth-child(2) {
+  width: 80%;
+}
+
+.chat__write-column input {
+  padding: 20px 10px;
+  width: 100%;
+  height: 80%;
+  border: none;
+  font-size: 14px;
+}
+.chat__write-column input:focus {
+  outline: none;
+}
