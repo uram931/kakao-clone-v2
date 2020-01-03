@@ -1,0 +1,30 @@
+<!-- transition 하나의 state에서 다른 state로 넘어갈때 나타나는 효과
+animation
+transformation 크기 조절,회전,움직이는것 등등
+media query 브라우저 ㅋ크기를 알아내서 맞춰서 움직이는 것 웹사이트-모바일 반응형 -->
+<!-- 
+transitions -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transitions</title>
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+        transition: background-color 0.5s ease-in-out;
+      }
+      .box:active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      Text
+    </span>
+  </body>
+</html>

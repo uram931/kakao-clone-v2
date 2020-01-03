@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animations</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: 1.5s scaleAndRatateSquare infinite ease-in-out;
+      }
+      /* 애니메이션 이름을 짓는다, 키프레임이 있다고 하자 */
+      /* 키프레임은 css로 하여금 내가 애니메이션을 생성했다는 것을 알려준다 */
+      /* @keyframes scaleAndRatateSquare {
+        from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+      } */
+      @keyframes scaleAndRatateSquare {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">coooool</div>
+  </body>
+</html>
