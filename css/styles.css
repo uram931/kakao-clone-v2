@@ -10,7 +10,7 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
-
+@import "mobile.css";
 /* 일부가 짤려서 안나오는 경우 해결방법 */
 * {
   box-sizing: border-box;
@@ -28,4 +28,18 @@ a {
   /* 부모 요소로부터 색깔을 받아온다 */
   text-decoration: none;
   /* 문장의 밑줄 같은거 다 없애줌 */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
